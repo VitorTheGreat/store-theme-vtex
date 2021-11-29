@@ -10,8 +10,8 @@
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop",
-      "rtl-app"
+      "sticky-layout#4-desktop"
+      // "rtl-app"
       // "menu-custom",
       // "category-menu#dynamic"
     ]
