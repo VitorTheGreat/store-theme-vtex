@@ -14,7 +14,6 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "corebiz.rtl-app": "0.x",
     "vtex.product-context": "0.x",
     "vtex.category-menu": "2.x",
     "vtex.seller-selector": "0.x",
