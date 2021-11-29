@@ -1,0 +1,38 @@
+query queryCategoriesTree($treeLevel: Int) {
+  categories(treeLevel: $treeLevel) {
+    href
+    slug
+    id
+    name
+  	titleTag
+    hasChildren
+    metaTagDescription
+    children {
+      href
+      slug
+      id
+      name
+      titleTag
+      hasChildren
+      metaTagDescription
+        children {
+          href
+          slug
+          id
+          name
+          titleTag
+          hasChildren
+          metaTagDescription
+            children {
+              href
+              slug
+              id
+              name
+              titleTag
+              hasChildren
+              metaTagDescription
+            }
+        }
+    }
+  }
+}

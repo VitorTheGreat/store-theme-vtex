@@ -1,0 +1,44 @@
+{
+    "vtex.menu@2.x:menu#accordion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#menu1"
+        ]
+    },
+    "menu-item#menu1": {
+        "props": {
+            "itemProps": {
+                "tagTitle": "TagTitle",
+                "text": "Text Menu 1"
+            },
+            "blockClass": "accordion-title"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#menu1"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#menu1": {
+        "children": [
+            "vtex.menu@2.x:menu#menu1"
+        ]
+    },
+    "vtex.menu@2.x:menu#menu1": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-accordion"
+        },
+        "children": [
+            "rich-text#menu1"
+        ]
+    },
+    "rich-text#menu1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "Menu 1 content",
+            "blockClass": "menu-1-content"
+        }
+    }
+}

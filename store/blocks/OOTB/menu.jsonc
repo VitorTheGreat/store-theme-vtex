@@ -1,0 +1,62 @@
+{
+    "vtex.menu@2.x:menu#test": {
+        "children": [
+          "menu-item#shop"
+        ]
+      },
+      "menu-item#shop": {
+        "props": {
+          "id": "menu-item-shop2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Shop",
+            "text": "Shop"
+          },
+          "iconProps": {
+            "id": "bnd-logo",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          },
+          "iconToTheRight": true
+        }
+      },
+
+      "vtex.menu@2.x:menu#test2": {
+        "props": {
+          "items": [
+            {
+              "id": "menu-item-shop2",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Shop",
+                "text": "Shop"
+              }
+            },
+            {
+              "id": "menu-item-about-us",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "/about-us",
+                "noFollow": false,
+                "tagTitle": "about-us",
+                "text": "About Us"
+              }
+            }
+          ]
+        }
+      }
+}
